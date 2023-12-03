@@ -1,0 +1,167 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="MaxGainz">
+  <main>
+    <div class="announcement-banner">
+      <a
+        href="https://play.google.com/store/apps/details?id=com.sidmohanty11.maxgainz&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+        target="_blank"
+      >
+        MaxGainz is now available on the Google Play Store and is soon going to
+        be Opensourced!
+      </a>
+    </div>
+    <div class="container will-change">
+      <div class="text-content will-change">
+        <img src="adaptive-icon.png" alt="MaxGainz" height="200px" />
+        <h1>Next Generation Workout Tracker App: MaxGainz</h1>
+        <p>
+          MaxGainz is the ultimate fitness app designed to elevate your workout
+          experience to the next level! Whether you're a seasoned gym warrior or
+          just starting your fitness journey, MaxGainz has got you covered with
+          its powerful features and intuitive interface.
+        </p>
+        <div>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.sidmohanty11.maxgainz&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            target="_blank"
+            ><img
+              alt="Get it on Google Play"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              height="100px"
+            /></a
+          >
+        </div>
+      </div>
+      <div class="phone-mockup will-change">
+        <img src="phone.png" alt="Screenshots" />
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Titan+One&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .announcement-banner {
+    text-align: center;
+    color: #333;
+    background-color: #93c5fd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .announcement-banner a {
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+    height: calc(100vh - 20vh);
+    animation: fadeIn 1s ease-out;
+  }
+
+  .text-content {
+    width: 50%;
+    padding: 20px;
+    animation: fadeIn 2s ease-out;
+  }
+
+  .text-content h1 {
+    color: #000;
+    font-size: 2em;
+    font-family: "Titan One", cursive;
+  }
+
+  .text-content p {
+    color: #333;
+    margin: 20px 0;
+  }
+
+  .phone-mockup img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out;
+  }
+
+  .will-change {
+    will-change: transform;
+  }
+
+  @media (max-width: 768px) {
+    .announcement-banner {
+      font-size: 0.8em;
+    }
+
+    .container {
+      margin-top: 40px;
+      flex-direction: column;
+      height: auto;
+    }
+
+    .text-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-content h1 {
+      text-align: center;
+    }
+
+    .text-content p {
+      text-align: center;
+    }
+
+    .phone-mockup {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+</style>
